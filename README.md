@@ -1,7 +1,7 @@
 # Podcast FM
 
 ## Live Demo
-## <a href="https://delivery-app-alejove.netlify.app/" target="_blank" >See it here!</a>
+## <a href="https://podcast-app-alejove.netlify.app/" target="_blank" >See it here!</a>
 
 ## Description
 
