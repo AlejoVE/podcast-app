@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.stats {
+	padding-bottom: 5rem;
+	h2 {
+		@include m.headingBorder(v.$secondary, v.$primary);
+
+		@include m.tablet {
+			margin-top: 5rem;
+		}
+	}
+
+	p {
+		margin-bottom: 3rem;
+	}
+}

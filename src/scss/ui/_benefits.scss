@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.benefits {
+	background-color: v.$primary;
+	// padding: 3rem 3rem 5rem 3rem;
+
+	@include m.tablet {
+		padding: 8rem 0;
+	}
+
+	.benefits-grid {
+		align-items: center;
+		@include m.tablet {
+			@include m.grid(5, 4rem);
+		}
+	}
+
+	.benefits-content {
+		grid-column: 1 / 4;
+		margin-bottom: 4rem;
+
+		@include m.tablet {
+			margin-bottom: 0;
+		}
+
+		h2 {
+			@include m.headingBorder(v.$secondary, v.$white);
+		}
+	}
+
+	.image {
+		grid-column: 4 / 6;
+		transition-property: transform;
+		transition-duration: 0.3s;
+		&:hover {
+			transform: rotate(8deg) scale(1.05);
+		}
+	}
+}
